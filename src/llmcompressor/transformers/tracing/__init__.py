@@ -16,6 +16,9 @@ from .whisper import (
 from .qwen2_5_vl import (
     Qwen2_5_VLForConditionalGeneration as TraceableQwen2_5_VLForConditionalGeneration
 )
+from .gemma3 import (
+    Gemma3ForConditionalGeneration as TraceableGemma3ForConditionalGeneration,
+)
 from .debug import get_model_class
 
 __all__ = [
@@ -26,4 +29,5 @@ __all__ = [
     "TraceableIdefics3ForConditionalGeneration",
     "TraceableWhisperForConditionalGeneration",
     "TraceableQwen2_5_VLForConditionalGeneration",
+    "TraceableGemma3ForConditionalGeneration",
 ]
